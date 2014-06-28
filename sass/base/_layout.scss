@@ -110,6 +110,11 @@ body {
   font-size: $header-font-size;
   padding-top: $header-padding-top;
   padding-bottom: $header-padding-bottom;
+  > hgroup > img {
+    margin-top: $pad-medium;
+    margin-left: $pad-narrow;
+    margin-right: $pad-narrow;
+  }
 }
 
 }
