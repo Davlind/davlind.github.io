@@ -21,45 +21,44 @@ body > header {
     font-weight: normal;
   }
 
-  .twitter {
+  .icon {
     margin: $pad-medium auto auto 0;
     padding-left: $pad-narrow;
     padding-right: $pad-narrow;
     width: 50px;
     height:50px;
     display: inline-block;
+  }
+
+  .twitter {
     background:transparent url('/images/tw1.png') center top no-repeat;
   }
 
   .twitter:hover {
-   background-image: url('/images/tw2.png');
+   background:transparent url('/images/tw2.png') center top no-repeat;
  }
 
-   .linkedin {
-    margin: $pad-medium auto auto 0;
-    padding-left: $pad-narrow;
-    padding-right: $pad-narrow;
-    width: 50px;
-    height:50px;
-    display: inline-block;
-    background:transparent url('/images/in1.png') center top no-repeat;
-  }
+ .linkedin {
+  background:transparent url('/images/in1.png') center top no-repeat;
+}
 
-  .linkedin:hover {
-   background-image: url('/images/in2.png');
- }
+.linkedin:hover {
+ background:transparent url('/images/in2.png') center top no-repeat;
+}
 
-   .rss {
-    margin: $pad-medium auto auto 0;
-    padding-left: $pad-narrow;
-    padding-right: $pad-narrow;
-    width: 50px;
-    height:50px;
-    display: inline-block;
-    background:transparent url('/images/rss1.png') center top no-repeat;
-  }
+.rss {
+  background:transparent url('/images/rss1.png') center top no-repeat;
+}
 
-  .rss:hover {
-   background-image: url('/images/rss2.png');
- }
+.rss:hover {
+ background:transparent url('/images/rss2.png') center top no-repeat;
+}
+
+.github {
+  background:transparent url('/images/gh1.png') center top no-repeat;
+}
+
+.github:hover {
+ background:transparent url('/images/gh2.png') center top no-repeat;
+}
 }

@@ -1,4 +1,4 @@
-$max-width: 1200px !default;
+$max-width: 1000px !default;
 
 // Padding used for layout margins
 $pad-min: 18px !default;
@@ -108,13 +108,13 @@ body {
 }
 > header {
   font-size: $header-font-size;
-  padding-top: $header-padding-top;
-  padding-bottom: $header-padding-bottom;
-  > hgroup > img {
-    margin-top: $pad-medium;
-    margin-left: $pad-narrow;
-    margin-right: $pad-narrow;
-  }
+  padding-top: $pad-wide;
+  padding-bottom: $pad-wide;
+  // > hgroup > img {
+  //   margin-top: $pad-medium;
+  //   margin-left: $pad-narrow;
+  //   margin-right: $pad-narrow;
+  // }
 }
 
 }
