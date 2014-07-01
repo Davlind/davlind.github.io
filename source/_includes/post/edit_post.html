@@ -1,0 +1,10 @@
+{% if site.github_source_repo %}
+
+    {% if post.url %}
+      {% assign path = post.path %}
+    {% else %}
+      {% assign path = page.path %}
+    {% endif %}
+
+   | <i class="fa fa-edit"></i> <a href="{{ site.github_source_repo }}edit/source/source/{{ path }}">edit</a>
+{% endif %}
