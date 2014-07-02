@@ -85,9 +85,9 @@ body {
     }
     }*/
 
-    > nav {
-     @extend .group;
-   }  
+   //  > nav {
+   //   @extend .group;
+   // }
    div.pagination {
     @extend .group;
     margin-left: $pad-min;
