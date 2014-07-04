@@ -25,3 +25,5 @@ end
 
 gem 'guard'
 gem 'guard-livereload'
+
+gem 'jekyll-assets'
