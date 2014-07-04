@@ -98,7 +98,7 @@ disqus_short_name: davlind
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: 52191163
 
 # Facebook Like
 facebook_like: false
@@ -115,3 +115,6 @@ assets:
     css: 'sass'
   cachebust: hard
   gzip: [ text/css, application/javascript ]
+
+jekyll-press:
+  exclude: ['atom.xml', '*.js', '*.css']
