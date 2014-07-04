@@ -102,3 +102,16 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# Assets
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - javascripts
+    - stylesheets
+  compress:
+    js: 'uglifier'
+    css: 'sass'
+  cachebust: hard
+  gzip: [ text/css, application/javascript ]

@@ -27,3 +27,5 @@ gem 'guard'
 gem 'guard-livereload'
 
 gem 'jekyll-assets'
+gem 'uglifier'
+gem 'jekyll-press'
