@@ -3,7 +3,7 @@ layout: post
 title: "Markdown example"
 date: 2014-06-28 04:43:57 +0200
 comments: true
-categories: 
+categories:
 ---
 # Header 1 #
 ## Header 2 ##
@@ -14,18 +14,17 @@ categories:
 ## Markdown plus h2 with a custom ID ##         {#id-goes-here}
 [Link back to H2](#id-goes-here)
 
-This is a paragraph, which is text surrounded by whitespace. Paragraphs can be on one 
-line (or many), and can drone on for hours.  
+This is a paragraph, which is text surrounded by whitespace. Paragraphs can be on one
+line (or many), and can drone on for hours.
 
-Here is a Markdown link to [Warped](http://warpedvisions.org), and a literal . 
+Here is a Markdown link to [Warped](http://warpedvisions.org), and a literal .
 Now some SimpleLinks, like one to [google] (automagically links to are-you-
-feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to 
-[foldoc: CPU]s at foldoc.  
+feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
+[foldoc: CPU]s at foldoc.
 
-Now some inline markup like _italics_,  **bold**, and `code()`. Note that underscores in 
+Now some inline markup like _italics_,  **bold**, and `code()`. Note that underscores in
 words are ignored in Markdown Extra.
 
-![picture alt](/images/photo.jpeg "Title is optional")     
 
 > Blockquotes are like quoted text in email replies
 >> And, they can be nested
@@ -53,11 +52,11 @@ if (this_is_more_code == true && !indented) {
 
 ~~~
 
-Text with  
-two trailing spaces  
-(on the right)  
-can be used  
-for things like poems  
+Text with
+two trailing spaces
+(on the right)
+can be used
+for things like poems
 
 ### Horizontal rules
 
@@ -66,8 +65,8 @@ for things like poems
 --------------------------
 
 <div class="custom-class" markdown="1">
-This is a div wrapping some Markdown plus.  Without the DIV attribute, it ignores the 
-block. 
+This is a div wrapping some Markdown plus.  Without the DIV attribute, it ignores the
+block.
 </div>
 
 ## Markdown plus tables ##
