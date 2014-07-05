@@ -4,7 +4,7 @@
   <title><![CDATA[David Lindblad]]></title>
   <link href="http://Davlind.github.io/atom.xml" rel="self"/>
   <link href="http://Davlind.github.io/"/>
-  <updated>2014-06-30T21:20:51+02:00</updated>
+  <updated>2014-07-05T15:55:04+02:00</updated>
   <id>http://Davlind.github.io/</id>
   <author>
     <name><![CDATA[David Lindblad]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Markdown example]]></title>
+    <title type="html"><![CDATA[Markdown Example]]></title>
     <link href="http://Davlind.github.io/blog/2014/06/28/markdown-example/"/>
     <updated>2014-06-28T04:43:57+02:00</updated>
     <id>http://Davlind.github.io/blog/2014/06/28/markdown-example</id>
@@ -42,8 +42,6 @@ feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
 
 <p>Now some inline markup like <em>italics</em>,  <strong>bold</strong>, and <code>code()</code>. Note that underscores in
 words are ignored in Markdown Extra.</p>
-
-<p><img src="http://Davlind.github.io/images/photo.jpeg" title="Title is optional" alt="picture alt" /></p>
 
 <blockquote><p>Blockquotes are like quoted text in email replies</p>
 
@@ -78,10 +76,10 @@ which(is_easy) to_remember();
 
 <p>~~~</p>
 
-<p>Text with<br/>
-two trailing spaces<br/>
-(on the right)<br/>
-can be used<br/>
+<p>Text with
+two trailing spaces
+(on the right)
+can be used
 for things like poems</p>
 
 <h3>Horizontal rules</h3>
@@ -93,8 +91,8 @@ for things like poems</p>
 <hr />
 
 <div class="custom-class" markdown="1">
-This is a div wrapping some Markdown plus.  Without the DIV attribute, it ignores the 
-block. 
+This is a div wrapping some Markdown plus.  Without the DIV attribute, it ignores the
+block.
 </div>
 
 
@@ -153,7 +151,7 @@ Pop
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Testing another post...]]></title>
+    <title type="html"><![CDATA[Testing Another Post...]]></title>
     <link href="http://Davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot/"/>
     <updated>2014-06-28T01:23:11+02:00</updated>
     <id>http://Davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot</id>
