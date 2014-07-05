@@ -498,4 +498,8 @@
 
   window.responsiveNav = responsiveNav;
 
+  var nav = responsiveNav(".nav-collapse", {
+    customToggle: "nav-menu-btn"
+  });
+
 }(document, window, 0));

@@ -1,11 +1,18 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(/assets/fonts/oswald.woff) format('woff');
+}
+
 $blockquote: $type-border !default;
-$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
-$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+$sans: "Helvetica Neue", Arial, sans-serif !default;
+$serif: Georgia, Times, "Times New Roman", serif !default;
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
 // $heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
 // $header-title-font-family: $heading-font-family !default;
-$heading-font-family: "Open Sans Condensed", sans-serif;
-$header-title-font-family: "Oswald", sans-serif;
+$heading-font-family: "Oswald", sans-serif;
+$header-title-font-family: $heading-font-family, sans-serif;
 
 $header-subtitle-font-family: $heading-font-family !default;
 
