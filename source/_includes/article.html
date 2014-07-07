@@ -9,9 +9,11 @@
     {% unless page.meta == false %}
       <p class="meta">
         {% include post/date.html %}{{ time }}
-        {% include post/disqus_meta.html %}
-
-        {% include post/edit_post.html %}
+        | Read in {{ content | reading_time }}
+        {% unless index %}
+          {% include post/disqus_meta.html %}
+          {% include post/edit_post.html %}
+        {% endunless %}
       </p>
     {% endunless %}
   </header>
