@@ -103,6 +103,8 @@ google_analytics_tracking_id: UA-52191163-1
 # Facebook Like
 facebook_like: false
 
+debug_theme: true 
+
 # Assets
 assets:
   dirname: assets
