@@ -86,13 +86,12 @@
   </div>
 </div>
 
-  <div id="sidebar-toggle" class="navbar-toggle">
-    <i class="fa fa-2x fa-caret-left"></i>
-  </div>
+  
   <div id="snap-content">
-    
-
     <section>
+      <div id="sidebar-toggle" class="navbar-toggle">
+        <i class="fa fa-2x fa-caret-left"></i>
+      </div>
       <div id="main">
         <div id="content">
           <div>
@@ -204,6 +203,7 @@
 
 
 <script src="/javascripts/snap.js"></script>
+<script src="/javascripts/headroom.js"></script>
 
 <script>
   var snapper=new Snap({
@@ -226,13 +226,31 @@
   //   }
   // });
 
-  document.getElementById('sidebar-toggle').addEventListener('click', function() {
+  var menuButton = document.getElementById('sidebar-toggle');
+  menuButton.addEventListener('click', function() {
     if(snapper.state().state=="right"){
       snapper.close();
     }else{
       snapper.open('right');
     }
   }, false);
+
+  // var headroom = new Headroom(menuButton);
+  // headroom.scroller = document.getElementById('snap-content');
+
+  var headroom = new Headroom(menuButton, {
+  "tolerance": 5,
+  "offset": 205,
+  "scroller": document.getElementById('snap-content'),
+  "classes": {
+    "initial": "animated",
+    "pinned": "slideDown",
+    "unpinned": "slideUp",
+    "top": "headroom--top",
+    "notTop": "headroom--not-top"
+  }
+});
+  headroom.init();
 
   // $("#sidebar-toggle").click(function(){
   //   if(snapper.state().state=="right"){
