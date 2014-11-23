@@ -75,10 +75,6 @@ GEM
       sprockets-sass
     jekyll-coffeescript (1.0.0)
       coffee-script (~> 2.2)
-    jekyll-date-format (1.0.0)
-      jekyll (>= 1.0.0)
-    jekyll-page-hooks (1.2.0)
-      jekyll (>= 2.0.0)
     jekyll-press (0.2.1)
       html_press (>= 0.8.2)
       jekyll
@@ -103,6 +99,11 @@ GEM
     multi_js (0.1.0)
       uglifier (~> 2)
     multi_json (1.10.1)
+    octopress-date-format (2.0.2)
+      jekyll (~> 2.0)
+      octopress-hooks (~> 2.0)
+    octopress-hooks (2.2.1)
+      jekyll (~> 2.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)
@@ -180,10 +181,10 @@ DEPENDENCIES
   haml (~> 4.0)
   jekyll (~> 2.0)
   jekyll-assets
-  jekyll-date-format (~> 1.0)
-  jekyll-page-hooks (~> 1.2)
   jekyll-press
   jekyll-sitemap
+  octopress-date-format (~> 2.0)
+  octopress-hooks (~> 2.2)
   rake (~> 10.0)
   rb-fsevent (~> 0.9)
   rdiscount (~> 2.0)
