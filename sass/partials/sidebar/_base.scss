@@ -83,24 +83,24 @@ aside.sidebar {
       content: "\00BB";
       text-indent: -1px;
     }
-    .collapse-sidebar & {
-      text-indent: 0px;
-      right: -20px;
-      width: 19px;
-      &:hover {
-        background: mix($sidebar-border, $sidebar-bg);
-      }
-      &:after {
-        border-left: 1px solid $sidebar-border;
-        text-shadow: #fff 0 1px;
-        content: "\00AB";
-        left: 0px; right: 0;
-        text-align: center;
-        text-indent: 0;
-        border: 0;
-        border-right-width: 0;
-        background: none;
-      }
-    }
+    // .collapse-sidebar & {
+    //   text-indent: 0px;
+    //   right: -20px;
+    //   width: 19px;
+    //   &:hover {
+    //     background: mix($sidebar-border, $sidebar-bg);
+    //   }
+    //   &:after {
+    //     border-left: 1px solid $sidebar-border;
+    //     text-shadow: #fff 0 1px;
+    //     content: "\00AB";
+    //     left: 0px; right: 0;
+    //     text-align: center;
+    //     text-indent: 0;
+    //     border: 0;
+    //     border-right-width: 0;
+    //     background: none;
+    //   }
+    // }
   }
 }

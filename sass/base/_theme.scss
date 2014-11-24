@@ -19,7 +19,7 @@ $type-border: #ddd !default;
 
 // Main Link Colors
 $link-color: lighten($text-color, 3) !default;
-$link-color-hover: adjust-color($link-color, $lightness: 10) !default;
+$link-color-hover: adjust-color($link-color, $lightness: 30) !default;
 $link-color-visited: adjust-color($link-color, $lightness: -4) !default;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
@@ -62,6 +62,9 @@ $page-border-bottom: darken($footer-bg, 5) !default;
 
 /* Core theme application */
 
+// a {
+//   @include link-colors(inherit, $hover: lighten(inherit, 20), $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+// }
 a {
   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
 }
@@ -69,7 +72,7 @@ a {
 //   @include link-colors($sidebar-link-color, $hover: $sidebar-link-color-hover, $focus: $sidebar-link-color-hover, $active: $sidebar-link-color-active);
 // }
 a {
-  @include transition(color .3s);
+  @include transition(color .5s);
 }
 
 // html {
