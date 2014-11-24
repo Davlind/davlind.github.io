@@ -5,14 +5,6 @@ date: 2014-06-28 04:43:57 +0200
 comments: true
 categories:
 ---
-# Header 1 #
-## Header 2 ##
-### Header 3 ###             (Hashes on right are optional)
-#### Header 4 ####
-##### Header 5 #####
-
-## Markdown plus h2 with a custom ID ##         {#id-goes-here}
-[Link back to H2](#id-goes-here)
 
 This is a paragraph, which is text surrounded by whitespace. Paragraphs can be on one
 line (or many), and can drone on for hours.
@@ -21,6 +13,8 @@ Here is a Markdown link to [Warped](http://warpedvisions.org), and a literal .
 Now some SimpleLinks, like one to [google] (automagically links to are-you-
 feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
 [foldoc: CPU]s at foldoc.
+
+<!-- More -->
 
 {% gist be618b71de921ac1a441 dummyExample.js %}
 
