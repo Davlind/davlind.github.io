@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[David Lindblad]]></title>
-  <link href="http://Davlind.github.io/atom.xml" rel="self"/>
-  <link href="http://Davlind.github.io/"/>
-  <updated>2014-11-22T10:44:24+01:00</updated>
-  <id>http://Davlind.github.io/</id>
+  <link href="http://davlind.github.io/atom.xml" rel="self"/>
+  <link href="http://davlind.github.io/"/>
+  <updated>2014-11-24T01:10:07+01:00</updated>
+  <id>http://davlind.github.io/</id>
   <author>
     <name><![CDATA[David Lindblad]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Dummy Post for Design]]></title>
-    <link href="http://Davlind.github.io/blog/2014/07/05/dummy-post-for-design/"/>
+    <link href="http://davlind.github.io/blog/2014/07/05/dummy-post-for-design/"/>
     <updated>2014-07-05T16:01:48+02:00</updated>
-    <id>http://Davlind.github.io/blog/2014/07/05/dummy-post-for-design</id>
+    <id>http://davlind.github.io/blog/2014/07/05/dummy-post-for-design</id>
     <content type="html"><![CDATA[<p>Lorem markdownum vacuos manus siderea, Lernae est dicique: hunc! Piae sic
 formosius <em>ima</em> nocte cuius, iniuria petit promisistis fusus vidisset regio.
 Quoniam tenebat cretosaque <em>in dixit</em> bellum reddita Aonides;
@@ -35,6 +35,9 @@ et hinc, et <a href="http://twitter.com/search?q=haskell">quidam sublime</a>. Et
 <a href="http://www.raynelongboards.com/">undique</a>, et. Quod <strong>non</strong> fide huic audacia
 putat servabant amori lampades rerum thalamis at, <a href="http://seenly.com/">maximus</a>,
 atque.</p>
+
+<!-- More -->
+
 
 <p>At iuvenale, et fratri, aequoris positis velis reducere Telamon saevisque
 erratica fugit at. <a href="http://hipstermerkel.tumblr.com/">Undas</a> tamen, nec in
@@ -73,30 +76,56 @@ caelum</a>. Sequemur Parnasi.</p>
   
   <entry>
     <title type="html"><![CDATA[Markdown Example]]></title>
-    <link href="http://Davlind.github.io/blog/2014/06/28/markdown-example/"/>
+    <link href="http://davlind.github.io/blog/2014/06/28/markdown-example/"/>
     <updated>2014-06-28T04:43:57+02:00</updated>
-    <id>http://Davlind.github.io/blog/2014/06/28/markdown-example</id>
-    <content type="html"><![CDATA[<h1>Header 1</h1>
-
-<h2>Header 2</h2>
-
-<h3>Header 3 ###             (Hashes on right are optional)</h3>
-
-<h4>Header 4</h4>
-
-<h5>Header 5</h5>
-
-<h2>Markdown plus h2 with a custom ID ##         {#id-goes-here}</h2>
-
-<p><a href="#id-goes-here">Link back to H2</a></p>
-
-<p>This is a paragraph, which is text surrounded by whitespace. Paragraphs can be on one
+    <id>http://davlind.github.io/blog/2014/06/28/markdown-example</id>
+    <content type="html"><![CDATA[<p>This is a paragraph, which is text surrounded by whitespace. Paragraphs can be on one
 line (or many), and can drone on for hours.</p>
 
 <p>Here is a Markdown link to <a href="http://warpedvisions.org">Warped</a>, and a literal .
 Now some SimpleLinks, like one to [google] (automagically links to are-you-
 feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
 [foldoc: CPU]s at foldoc.</p>
+
+<!-- More -->
+
+
+
+
+<div><script src='https://gist.github.com/be618b71de921ac1a441.js?file=dummyExample.js'></script>
+<noscript><pre><code>// ko binding for localized src
+ko.bindingHandlers.locsrc = {
+    init: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
+        localization.language.subscribe(function () {
+            updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
+        });
+    },
+    update: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
+        updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
+    }
+};</code></pre></noscript></div>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git@github.com:imathis/octopress.git # fork octopress</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Now some inline markup like <em>italics</em>,  <strong>bold</strong>, and <code>code()</code>. Note that underscores in
 words are ignored in Markdown Extra.</p>
@@ -210,18 +239,18 @@ Pop
   
   <entry>
     <title type="html"><![CDATA[Testing Another Post...]]></title>
-    <link href="http://Davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot/"/>
+    <link href="http://davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot/"/>
     <updated>2014-06-28T01:23:11+02:00</updated>
-    <id>http://Davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot</id>
+    <id>http://davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Test Post!]]></title>
-    <link href="http://Davlind.github.io/blog/2014/06/27/test-post/"/>
+    <link href="http://davlind.github.io/blog/2014/06/27/test-post/"/>
     <updated>2014-06-27T15:54:18+02:00</updated>
-    <id>http://Davlind.github.io/blog/2014/06/27/test-post</id>
+    <id>http://davlind.github.io/blog/2014/06/27/test-post</id>
     <content type="html"><![CDATA[<p>Testing all the things! :&ndash;)</p>
 ]]></content>
   </entry>

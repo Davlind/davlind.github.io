@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://Davlind.github.io/sitemap.xml 
+Sitemap: http://davlind.github.io/sitemap.xml 

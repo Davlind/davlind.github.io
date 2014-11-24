@@ -3,40 +3,40 @@
   
   
   <url>
-    <loc>http://Davlind.github.io/blog/2014/07/05/dummy-post-for-design/</loc>
+    <loc>http://davlind.github.io/blog/2014/07/05/dummy-post-for-design/</loc>
     <lastmod>2014-07-05T16:01:48+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://Davlind.github.io/blog/2014/06/28/markdown-example/</loc>
+    <loc>http://davlind.github.io/blog/2014/06/28/markdown-example/</loc>
     <lastmod>2014-06-28T04:43:57+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://Davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot/</loc>
+    <loc>http://davlind.github.io/blog/2014/06/28/testing-another-post-dot-dot-dot/</loc>
     <lastmod>2014-06-28T01:23:11+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://Davlind.github.io/blog/2014/06/27/test-post/</loc>
+    <loc>http://davlind.github.io/blog/2014/06/27/test-post/</loc>
     <lastmod>2014-06-27T15:54:18+02:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   
   <url>
-    <loc>http://Davlind.github.io/blog/archives/</loc>
-    <lastmod>2014-11-22T10:44:24+01:00</lastmod>
+    <loc>http://davlind.github.io/blog/archives/</loc>
+    <lastmod>2014-11-24T01:10:07+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://Davlind.github.io/</loc>
-    <lastmod>2014-11-22T10:44:24+01:00</lastmod>
+    <loc>http://davlind.github.io/</loc>
+    <lastmod>2014-11-24T01:10:07+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
