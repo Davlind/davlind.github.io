@@ -15,6 +15,9 @@ single: true
       {% if page.next.url %}
         <a rel="next" class="basic-alignment right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
       {% endif %}
+      {% unless page.about == false %}
+        {% include custom/asides/about.html %}
+      {% endunless %}
       {% unless page.sharing == false %}
         {% include post/sharing.html %}
       {% endunless %}
