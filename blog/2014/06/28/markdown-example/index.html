@@ -134,11 +134,11 @@ feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
 ko.bindingHandlers.locsrc = {
     init: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
         localization.language.subscribe(function () {
-            updateText(function (text) { return { src: text }; }, 'attr', element, valueAccessor, allBindingsAccessor, viewModel, context);
+            updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
         });
     },
     update: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
-        updateText(function (text) { return { src: text }; }, 'attr', element, valueAccessor, allBindingsAccessor, viewModel, context);
+        updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
     }
 };</code></pre></noscript></div>
 
@@ -276,18 +276,21 @@ Pop
 
   <footer>
 
-    <p class="meta">
+    <div>
       
-        <a rel="previous" class="basic-alignment left" href="/blog/2014/06/28/testing-another-post-dot-dot-dot/" title="Previous Post: Testing another post...">&laquo; Testing another post&#8230;</a>
-      
-      
-        <a rel="next" class="basic-alignment right" href="/blog/2014/07/05/dummy-post-for-design/" title="Next Post: Dummy post for design">Dummy post for design &raquo;</a>
+        <a class="basic-alignment left button" href="/blog/2014/06/28/testing-another-post-dot-dot-dot/" title="Previous Post: Testing another post...">&laquo; Testing another post&#8230;</a>
       
       
-        <p class="about">A little something about me.</p>
+        <a class="basic-alignment right button" href="/blog/2014/07/05/dummy-post-for-design/" title="Next Post: Dummy post for design">Dummy post for design &raquo;</a>
       
-      
-        <div class="sharing">
+    </div>
+    
+      <div>
+	<p class="about">A little something about me.</p>
+<div>
+    
+    
+      <div class="sharing">
   
   <a href="//twitter.com/share" class="twitter-share-button" data-url="http://davlind.github.io/blog/2014/06/28/markdown-example/" data-via="davidlindblad" data-counturl="http://davlind.github.io/blog/2014/06/28/markdown-example/" >Tweet</a>
   
@@ -299,8 +302,7 @@ Pop
   
 </div>
 
-      
-    </p>
+    
   </footer>
 </article>
 
