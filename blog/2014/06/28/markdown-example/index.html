@@ -134,11 +134,11 @@ feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
 ko.bindingHandlers.locsrc = {
     init: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
         localization.language.subscribe(function () {
-            updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
+            updateText(function (text) { return { src: text }; }, 'attr', element, valueAccessor, allBindingsAccessor, viewModel, context);
         });
     },
     update: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
-        updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
+        updateText(function (text) { return { src: text }; }, 'attr', element, valueAccessor, allBindingsAccessor, viewModel, context);
     }
 };</code></pre></noscript></div>
 
@@ -282,6 +282,9 @@ Pop
       
       
         <a rel="next" class="basic-alignment right" href="/blog/2014/07/05/dummy-post-for-design/" title="Next Post: Dummy post for design">Dummy post for design &raquo;</a>
+      
+      
+        <p class="about">A little something about me.</p>
       
       
         <div class="sharing">
