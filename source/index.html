@@ -10,15 +10,11 @@ layout: default
       {% include article.html %}
     </article>
   {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page_path}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-  {% include custom/asides/about.html %}
+  <footer>
+      <a class="basic-alignment left button" href="{{paginator.next_page_path}}">&larr; Older</a>
+      <a class="basic-alignment right button" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
+      <a class="button" href="/blog/archives">Blog Archives</a>
+    {% include custom/asides/about.html %}
+  </footer>
 </div>
 

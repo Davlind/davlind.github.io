@@ -9,19 +9,19 @@ body > header {
   padding-bottom: $pad-wide;
   margin-bottom: $pad-medium;
   h1 {
-    display: inline-block;
-    margin: 0px;
+     // display: inline-block;
+  //   margin: 0px;
     a, a:visited, a:hover {
       color: $title_color;
       text-decoration: none;
     }
   }
   h2 {
-    margin: .2em 0 0;
-    @extend .sans;
-    font-size: 1em;
+  //   margin: .2em 0 0;
+  //   @extend .sans;
+  //   font-size: 1em;
     color: $subtitle-color;
-    font-weight: normal;
+  //   font-weight: normal;
   }
 
   .icon {

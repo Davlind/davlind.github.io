@@ -8,6 +8,10 @@ $main-bg: #ffffff !default;
 $page-bg: #ffffff !default;
 $article-border: #eeeeee !default;
 
+$accent-light: #e8e8e8 !default;
+
+$about-color: $accent-light !default;
+
 $header-bg: #333 !default;
 $header-border: lighten($header-bg, 15) !default;
 $title-color: #f2f2f2 !default;

@@ -57,7 +57,7 @@ html, body {
   }
 }
 
-div, article { clear: both;}
+div, article, footer { clear: both;}
 
 body {
   background-color: $main-bg;
@@ -94,23 +94,23 @@ body {
 
 
 
-div.pagination {
-  @extend .group;
-  margin-left: $pad-min;
-  margin-right: $pad-min;
-  @media only screen and (min-width: 480px) {
-    margin-left: $pad-narrow;
-    margin-right: $pad-narrow;
-  }
-  @media only screen and (min-width: 768px) {
-    margin-left: $pad-medium;
-    margin-right: $pad-medium;
-  }
-  @media only screen and (min-width: 992px) {
-    margin-left: $pad-wide;
-    margin-right: $pad-wide;
-  }
-}
+// div.pagination {
+//   @extend .group;
+//   margin-left: $pad-min;
+//   margin-right: $pad-min;
+//   @media only screen and (min-width: 480px) {
+//     margin-left: $pad-narrow;
+//     margin-right: $pad-narrow;
+//   }
+//   @media only screen and (min-width: 768px) {
+//     margin-left: $pad-medium;
+//     margin-right: $pad-medium;
+//   }
+//   @media only screen and (min-width: 992px) {
+//     margin-left: $pad-wide;
+//     margin-right: $pad-wide;
+//   }
+// }
 }
 > header {
   font-size: $header-font-size;

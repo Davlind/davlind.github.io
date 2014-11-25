@@ -1,3 +1,20 @@
+footer {
+	text-align: center;
+	p {
+		padding: $pad-min;
+		text-align: center;
+	}
+
+	a {
+		text-align: center;
+		width: $max-width/4;
+	}
+
+	.about {
+		background-color: $about-color;
+	}
+}
+
 // body > div > section > footer {
 //   font-size: .8em;
 //   color: $footer-color;
