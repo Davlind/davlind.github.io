@@ -11,6 +11,10 @@ footer {
 		text-overflow: ellipsis;
 	}
 
+	.button {
+		min-width: 150px;
+	}
+
 	.about {
 		background-color: $about-color;
 		text-align: left
