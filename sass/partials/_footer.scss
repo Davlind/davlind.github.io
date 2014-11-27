@@ -7,11 +7,15 @@ footer {
 
 	a {
 		text-align: center;
-		width: $max-width/4;
+		min-width: 150px;
 	}
 
 	.about {
 		background-color: $about-color;
+	}
+
+	div {
+		text-align: left;
 	}
 }
 

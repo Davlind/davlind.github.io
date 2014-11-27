@@ -172,3 +172,21 @@
 // }
 
 
+nav {
+  //width: 100%;
+  ul {
+    margin-top: $pad-min;		
+  }
+  
+  a {
+    text-decoration: none;
+    @include link-colors(#cccccc, darken(#cccccc, 30),darken(#cccccc, 30),#cccccc,darken(#cccccc, 30));
+	//@include link-colors($link-color-hover, $hover: $link-color, $focus: $link-color, $visited: $link-color, $active: $link-color-active);
+  }
+
+  h1 {
+    @media only screen and (min-width: $mobile-width) {
+      font-size: 1.5em;
+    }
+  }
+}
