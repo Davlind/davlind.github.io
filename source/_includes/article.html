@@ -9,7 +9,8 @@
     {% unless page.meta == false %}
       <p class="meta">
         {% include post/date.html %}{{ time }}
-        | Read in {{ content | reading_time }}
+        | <i class="fa fa-clock-o"></i> Read in {{ content | reading_time }}
+        {% include post/categories.html %}
         {% unless index %}
           {% include post/disqus_meta.html %}
           {% include post/edit_post.html %}
