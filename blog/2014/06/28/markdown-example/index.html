@@ -96,7 +96,7 @@ line (or many), and can drone on for hours. Here is a Markdown &hellip;">
 
 
 <time class='entry-date' datetime='2014-06-28T04:43:57+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:43 am</span></time>
-        | Read in about 2  minutes
+        | Read in about 4  minutes
         
           
 | <i class="fa fa-comment-o"></i>
@@ -172,14 +172,30 @@ words are ignored in Markdown Extra.</p>
 
 <blockquote><p>And, they can be nested</p></blockquote></blockquote>
 
+<p>Below is a bullet list</p>
+
 <ul>
 <li>Bullet lists are easy too</li>
+<li>Another one
+
+<ul>
 <li>Another one</li>
-<li><p>Another one</p></li>
-<li><p>A numbered list</p></li>
-<li>Which is numbered</li>
-<li>With periods and a space</li>
 </ul>
+</li>
+</ul>
+
+
+<p>Below is a numbered list</p>
+
+<ol>
+<li>A numbered list</li>
+<li>Which is numbered
+
+<ol>
+<li>With periods and a space with indentation</li>
+</ol>
+</li>
+</ol>
 
 
 <p>And now some code:</p>
@@ -188,18 +204,12 @@ words are ignored in Markdown Extra.</p>
 which(is_easy) to_remember();
 </code></pre>
 
-<p>~~~</p>
+<pre><code>// Markdown extra adds un-indented code blocks too
 
-<p>// Markdown extra adds un-indented code blocks too</p>
-
-<p>if (this_is_more_code == true &amp;&amp; !indented) {</p>
-
-<pre><code>// tild wrapped code blocks, also not indented
+if (this_is_more_code == true &amp;&amp; !indented) {
+    // tild wrapped code blocks, also not indented
+}
 </code></pre>
-
-<p>}</p>
-
-<p>~~~</p>
 
 <p>Text with
 two trailing spaces
@@ -226,24 +236,21 @@ block.
 <table>
 <thead>
 <tr>
-<th></th>
 <th> Header </th>
-<th> Header </th>
-<th align="right"> Right  </th>
+<th style="text-align:center;"> Header </th>
+<th style="text-align:right;"> Right  </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
 <td>  Cell  </td>
-<td>  Cell  </td>
-<td align="right">   $10  |</td>
+<td style="text-align:center;">  Cell  </td>
+<td style="text-align:right;">   $10  </td>
 </tr>
 <tr>
-<td></td>
 <td>  Cell  </td>
-<td>  Cell  </td>
-<td align="right">   $20  |</td>
+<td style="text-align:center;">  Cell  </td>
+<td style="text-align:right;">   $20  </td>
 </tr>
 </tbody>
 </table>
@@ -257,13 +264,14 @@ block.
 
 <h2>Markdown plus definition lists</h2>
 
-<p>Bottled water
-: $ 1.25
-: $ 1.55 (Large)</p>
-
-<p>Milk
-Pop
-: $ 1.75</p>
+<dl>
+<dt>Bottled water</dt>
+<dd>$ 1.25</dd>
+<dd>$ 1.55 (Large)</dd>
+<dt>Milk</dt>
+<dt>Pop</dt>
+<dd>$ 1.75</dd>
+</dl>
 
 <ul>
 <li>Multiple definitions and terms are possible</li>
@@ -272,6 +280,35 @@ Pop
 
 
 <p>*[ABBR]: Markdown plus abbreviations (produces an <abbr> tag)</p>
+
+<p><span class='pullquote-right' data-pullquote='Ut luctus molestie mi ut interdum. Proin at sodales lectus.'>
+Sed ultricies, metus efficitur maximus suscipit, nulla neque condimentum odio, et dictum leo lectus a ligula. Quisque dignissim sem lorem, quis congue felis fringilla sed. Integer interdum fringilla libero ac mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> ut imperdiet justo, at hendrerit massa. Morbi ut eros a tortor elementum faucibus. Nunc rhoncus efficitur ultricies. Pellentesque et elit est. Nulla congue gravida velit eget fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus molestie mi ut interdum. Proin at sodales lectus. Etiam ultrices Ut luctus molestie mi ut interdum. Proin at sodales lectus. feugiat est, a gravida nunc condimentum sed. Maecenas mauris nulla, varius quis consequat sit amet, faucibus in tortor. Surround your paragraph with the pull quote tags. Then when you come to the text you want to pull,  and that&rsquo;s all there is to it.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>
+</span></p>
+
+<p><span class='pullquote-left' data-pullquote='almost exactly like the default,'>
+Left-aligning pullquotes are good to alternate breaks in the text. They&rsquo;re
+almost exactly like the default, right pullquotes, but a little different.
+</span></p>
+
+<p>\[
+F(\omega) = \int_{-\infty}^\infty f(t) e^{-i \omega t} \d t.
+\]</p>
+
+<p>\[
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\]</p>
+
+<p>This expression \(\sqrt{3&#215;-1}+(1+x)^2\) is an example of an inline equation.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Here&rsquo;s an example of some footnote that should probably explain something.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<li id="fn:2">
+<p>Maecenas mauris nulla, varius quis consequat sit amet, faucibus in tortor. Surround your paragraph with the pull quote tags. Then when you come to the text you want to pull,  and that&rsquo;s all there is to it.<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
 </div>
 
 
@@ -338,6 +375,10 @@ Pop
 
 <script src="/javascripts/snap.js"></script>
 <script src="/javascripts/headroom.js"></script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://drz.ac/javascripts/MathJaxLocal.js">
+
+</script>
 
 <script>
   var snapper=new Snap({
