@@ -13,6 +13,10 @@
 
 <script src="/javascripts/snap.js"></script>
 <script src="/javascripts/headroom.js"></script>
+{% if page.math == true %}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://drz.ac/javascripts/MathJaxLocal.js">
+{% endif %}
+</script>
 
 <script>
   var snapper=new Snap({

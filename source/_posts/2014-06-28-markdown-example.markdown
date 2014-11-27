@@ -3,7 +3,8 @@ layout: post
 title: "Markdown example"
 date: 2014-06-28 04:43:57 +0200
 comments: true
-categories:
+categories: [Test, code]
+math: true
 ---
 
 This is a paragraph, which is text surrounded by whitespace. Paragraphs can be on one
@@ -38,13 +39,17 @@ words are ignored in Markdown Extra.
 > Blockquotes are like quoted text in email replies
 >> And, they can be nested
 
+Below is a bullet list
+
 * Bullet lists are easy too
 - Another one
-+ Another one
+    + Another one
+
+Below is a numbered list
 
 1. A numbered list
 2. Which is numbered
-3. With periods and a space
+    3. With periods and a space with indentation
 
 And now some code:
 
@@ -52,13 +57,11 @@ And now some code:
     which(is_easy) to_remember();
 
 ~~~
-
 // Markdown extra adds un-indented code blocks too
 
 if (this_is_more_code == true && !indented) {
     // tild wrapped code blocks, also not indented
 }
-
 ~~~
 
 Text with
@@ -81,7 +84,7 @@ block.
 ## Markdown plus tables ##
 
 | Header | Header | Right  |
-| ------ | ------ | -----: |
+| ------ | :----: | -----: |
 |  Cell  |  Cell  |   $10  |
 |  Cell  |  Cell  |   $20  |
 
@@ -102,3 +105,29 @@ Pop
 * Definitions can include multiple paragraphs too
 
 *[ABBR]: Markdown plus abbreviations (produces an <abbr> tag)
+
+{% pullquote %}
+Sed ultricies, metus efficitur maximus suscipit, nulla neque condimentum odio, et dictum leo lectus a ligula. Quisque dignissim sem lorem, quis congue felis fringilla sed. Integer interdum fringilla libero ac mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent[^1] ut imperdiet justo, at hendrerit massa. Morbi ut eros a tortor elementum faucibus. Nunc rhoncus efficitur ultricies. Pellentesque et elit est. Nulla congue gravida velit eget fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus molestie mi ut interdum. Proin at sodales lectus. Etiam ultrices {" Ut luctus molestie mi ut interdum. Proin at sodales lectus. "} feugiat est, a gravida nunc condimentum sed. Maecenas mauris nulla, varius quis consequat sit amet, faucibus in tortor. Surround your paragraph with the pull quote tags. Then when you come to the text you want to pull,  and that's all there is to it.[^2]
+{% endpullquote %}
+
+{% pullquote left %}
+Left-aligning pullquotes are good to alternate breaks in the text. They're
+{" almost exactly like the default, "} right pullquotes, but a little different.
+{% endpullquote %}
+
+{% raw %}
+\\[
+F(\omega) = \int_{-\infty}^\infty f(t) e^{-i \omega t} \d t.
+\\]
+
+\\[
+\left( \sum\_{k=1}\^n a\_k b\_k \right)\^2 \leq \left( \sum\_{k=1}\^n a\_k\^2 \right) \left( \sum\_{k=1}\^n b\_k\^2 \right)
+\\]
+{% endraw %}
+
+This expression \\(\sqrt{3&#215;-1}+(1+x)\^2\\) is an example of an inline equation. 
+
+
+
+[^1]: Here's an example of some footnote that should probably explain something.
+[^2]: Maecenas mauris nulla, varius quis consequat sit amet, faucibus in tortor. Surround your paragraph with the pull quote tags. Then when you come to the text you want to pull,  and that's all there is to it.
