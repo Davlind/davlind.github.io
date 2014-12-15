@@ -4,7 +4,7 @@
   <title><![CDATA[David Lindblad]]></title>
   <link href="http://davlind.github.io/atom.xml" rel="self"/>
   <link href="http://davlind.github.io/"/>
-  <updated>2014-12-10T22:13:57+01:00</updated>
+  <updated>2014-12-15T17:50:52+01:00</updated>
   <id>http://davlind.github.io/</id>
   <author>
     <name><![CDATA[David Lindblad]]></name>
@@ -97,11 +97,11 @@ feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
 ko.bindingHandlers.locsrc = {
     init: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
         localization.language.subscribe(function () {
-            updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
+            updateText(function (text) { return { src: text }; }, 'attr', element, valueAccessor, allBindingsAccessor, viewModel, context);
         });
     },
     update: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
-        updateText(function (text) { return { src: text }; }, &#39;attr&#39;, element, valueAccessor, allBindingsAccessor, viewModel, context);
+        updateText(function (text) { return { src: text }; }, 'attr', element, valueAccessor, allBindingsAccessor, viewModel, context);
     }
 };</code></pre></noscript></div>
 
